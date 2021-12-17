@@ -1,0 +1,11 @@
+package constructor;
+
+public class Main02P204 {
+
+	public static void main(String[] args) {
+		BakervallPlayer a = new BakervallPlayer(190,100);
+		
+
+	}
+
+}

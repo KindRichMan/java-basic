@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class sssssssss {
+
+	public static void main(String[] args) {
+		// 해보자
+		Scanner scan = new Scanner(System.in);
+		System.out.println("성적을 입력하세요.");
+		int score = scan.nextInt();
+		if(score > 90) {
+			System.out.println("A0입니다.");}
+		else if (score > 95) {
+			System.out.println("A+입니다.");
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+package constructor;
+
+public class BakervallPlayer {
+	public int height;//키
+	public int jumpHeight;//점프력
+	
+	public BakervallPlayer(int h, int j) {
+		
+		height = h;
+		jumpHeight =j;
+		System.out.println("생성된 선수 키" + height + "점프력" + jumpHeight);
+		
+		
+			
+		}
+	}
+
+

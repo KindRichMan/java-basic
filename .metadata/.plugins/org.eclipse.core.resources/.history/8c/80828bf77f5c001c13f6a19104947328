@@ -1,0 +1,25 @@
+package overriding;
+
+public class Main01P265 {
+
+	public static void main(String[] args) {
+		//말과 돼지를 생성해보겠습니다.
+		
+		
+		Cat c1 =new Cat();
+		c1.name = "야옹이";
+		c1.age = 4;
+		c1.cuiet = "사랑해";
+		
+		c1.howl();
+		
+		Pig p1 =new Pig();
+		p1.howl();
+		
+		
+
+
+
+	}
+
+}

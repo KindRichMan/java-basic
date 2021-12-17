@@ -1,0 +1,14 @@
+package overrriding;
+
+public class Main01P265 {
+
+	public static void main(String[] args) {
+		Cat c1 = new Cat();
+		c1.howl();
+		
+		Dog d2 =new Dog();
+		d2.howl();
+
+	}
+
+}
