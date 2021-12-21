@@ -1,20 +1,17 @@
 
-public class For01p112 {
+public class For01P112 {
 
 	public static void main(String[] args) {
-		// for문은 while문과는 다르게 며 바퀴를 돌릴지 정해놓고
+		// for문은 while문과는 다르게 몇 바퀴를 돌릴지 정해놓고
 		// 사용하는 반복문입니다.
 		// 문법은
-		// for(시작변수; 종료조건; 증감식){
-		//    실행문1;
-		//    실행문2;
+		// for(시작변수; 종료조건; 증감식) {
+		//     실행문1;
+		//     실행문2...
 		// }
 		// 으로 이루어져 있습니다.
-		for(int i = 0; i < 4; i++ ) {
+		for(int i = 0; i < 0; i++) {
 			System.out.println("for문을 이용한 반복문");
 		}
-
-		
 	}
-
 }
