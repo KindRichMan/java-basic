@@ -1,57 +1,57 @@
 package interface1;
 
 public class Airplane implements Vehicle {
-	
+
+	// 속도, 연료량, 기관사명을 선언합니다.
 	private int speed;
 	private int gas;
 	private String name;
 	
-	public Vehicle(Strig name) {
-		this.speed = 0;
-		this.gas = MAX_GAS;
+	public Airplane(String name) {
+		this.speed = MIN_SPD;
+		this.gas = AIRPLANE_MAX_GAS;
 		this.name = name;
-		
 	}
-
 	
 	@Override
 	public void accel() {
-		if(speed + AIRPLANE_INCREASE_SPD < AIRPLANE_MAX_spd) {
+		// 최대속도 400/ 50씩 증가
+		if(speed + AIRPLANE_INCREASE_SPD > AIRPLANE_MAX_SPD) {
+			speed = AIRPLANE_MAX_SPD;
+		} else {
 			speed += AIRPLANE_INCREASE_SPD;
-		}else {
-			speed = AIRPLANE_MAX_spd;
 		}
-		
+		// 가속 후 연료 차감
+		// -7씩 차감
+		gas -= AIRPLANE_DECREASE_GAS;
 	}
 
 	@Override
 	public void breakSpeed() {
-		if(speed - AIRPLANE_DEREASE_SPD < MIN_SPD ) {
+		// 감속도 50씩
+		if(speed - AIRPLANE_DECREASE_SPD < MIN_SPD) {
 			speed = MIN_SPD;
-		}else {
-			speed -= AIRPLANE_DEREASE_SPD;
-	}
-		
+		} else {
+			speed -= AIRPLANE_DECREASE_SPD;
+		}		
 	}
 
 	@Override
 	public void reFuel() {
-		if(gas + AIRPLANE_INCREASE_GAS  < AIRPLANE_MAX_GAS ) {
+		// 연료량은 70씩 채웁니다
+		if(gas + AIRPLANE_INCREASE_GAS > AIRPLANE_MAX_GAS) {
+			gas = AIRPLANE_MAX_GAS; 
+		} else {
 			gas += AIRPLANE_INCREASE_GAS;
-		}else {
-			gas = AIRPLANE_MAX_GAS;
 		}
-		gas -= 150;
-		
 	}
 
 	@Override
 	public void showStatus() {
-		System.out.println("현재 속도 :" + speed);
-		System.out.println("현재 연료 :" + gas);
-		System.out.println("현재 기관사 :" + name);
-		System.out.println("===============================================");
-		
+		System.out.println("현재 속도 : " + speed);
+		System.out.println("현재 연료 : " + gas);
+		System.out.println("현재 기장 : " + name);
+		System.out.println("-------------------------"); 
 	}
 
 }

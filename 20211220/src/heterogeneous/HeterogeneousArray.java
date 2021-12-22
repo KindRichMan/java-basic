@@ -17,9 +17,9 @@ public class HeterogeneousArray {
 	
 		//여러 자료형을 받을 수 있도록 모든 클래스의 부모인 object로 배열 생성
 		//object는 다형성의 원리에 의해 모든 자료를 저장받을 수 있다.
-		object[] oArr = {"a", "b", 1, 2, 3.0, 5.1};
-        for(object value : oArr) {
-      	  System.out.println("," + value);
+		Object[] oArr = {"a", "b", 1, 2, 3.0, 5.1};
+        for(Object value : oArr) {
+      	  System.out.print("," + value);
         }
 	}
 	
