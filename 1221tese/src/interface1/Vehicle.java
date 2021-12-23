@@ -8,7 +8,27 @@ package interface1;
 public interface Vehicle {
 	// 최대 연료량
 	// 바로 상수로 잡힙니다.
-	int MAX_GAS = 100;
+	int CAR_MAX_GAS = 100;
+	int MIN_SPD =0;//최저속도
+	int CAR_HI_SPD = 30;//가속속도
+	int CAR_DOWN_SPD =10;//다운속도
+	int CAR_HI_GAS=40;//가스충전양
+	int CAR_DOWN_GAS= 4;//연료감소량
+	int CAR_GOOD_SPD= 200;
+	// 비행기 전용으로 만드는 상수
+	int AIR_MAX_GAS=1000;
+	int AIR_MAX_SPD=900;
+	int AIR_HI_SPD=400;
+	int AIR_DOWN_SPD =300;
+	int AIR_DOWN_GAS = 150;
+	int AIR_HI_GAS = 500;
+	
+	int TRAIN_MAX_GAS = 300;
+	int TRAIN_GOOD_SPD= 200;
+	int TRAIN_CAR_HI_SPD = 30;//가속속도
+	int TRAIN_CAR_DOWN_SPD =10;//다운속도
+	int TRAIN_CAR_HI_GAS=70;//가스충전양
+	int TRAIN_CAR_DOWN_GAS= 20;//연료감소량
 	
 	// 탈 것이라면 가지고 있을 공통적 기능을 전부 추상메서드로 작성
 	// {

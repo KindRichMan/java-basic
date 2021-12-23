@@ -17,7 +17,7 @@ public class Car implements Vehicle{
 	public Car(String name) {
 		this.name = name;
 		this.speed = 0;
-		this.gas = MAX_GAS;
+		this.gas = CAR_MAX_GAS;
 	}
 	
 	
@@ -28,14 +28,14 @@ public class Car implements Vehicle{
 		// 단 속도는 200을 초과할 수 없습니다.
 		
 		// 가속 이전에 가속했을 경우 200을 초과하는지 확인해 처리
-		if(speed + 10 > 200) {
-			speed = 200;
+		if(speed + CAR_HI_SPD > CAR_GOOD_SPD) {
+			speed = CAR_GOOD_SPD;
 		}else {
-		speed -= 10;
+		speed += CAR_HI_SPD;
 		
 	}
 		// 가속 로직을 전부 확인한 다음
-		gas -=1;
+		gas -=CAR_DOWN_GAS;
 	}
 	
 
@@ -43,10 +43,10 @@ public class Car implements Vehicle{
 	public void breakSpeed() {
 		// 한 번 감속할때마다 속도가 10씩 줄도록 해주세요.
 		// 단, 속도가 0미만이 될 수 없습니다.
-		if( speed - 10  < 0) {
-			speed = 0; 
+		if( speed - CAR_DOWN_SPD  < MIN_SPD) {
+			speed = MIN_SPD; 
 		}else {
-			speed -= 10;
+			speed -= CAR_DOWN_SPD;
 		}
 		
 	}
@@ -55,10 +55,10 @@ public class Car implements Vehicle{
 	public void reFuel() {
 		// 연료는 다시 채울때마다 30씩 채워줍니다.
 		// 단, 연료 최대값은 상수 MAX_GAS를 이용해서 측정해주세요.
-		if(gas + 30 < MAX_GAS) {
-			gas = MAX_GAS;
+		if(gas + CAR_HI_GAS < CAR_MAX_GAS) {
+			gas = CAR_MAX_GAS;
 		}else {
-			gas += 30;
+			gas += CAR_HI_GAS;
 		}
 		
 	}

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+\import java.util.Arrays;
 
 public class Array01P146 {
    public static void main(String[] args) {
