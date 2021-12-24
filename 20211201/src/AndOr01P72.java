@@ -12,6 +12,7 @@ public class AndOr01P72 {
 		System.out.println(75 > 25 &  30 < 55);
 		System.out.println(55 < 35 | 75 > 35);
 
+		
 	}
 
 }
