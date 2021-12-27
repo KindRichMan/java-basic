@@ -1,6 +1,0 @@
-package polymorphism;
-
-public class Granddaughter extends Person{
-	private int 
-
-}
