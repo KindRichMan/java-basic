@@ -28,6 +28,7 @@ public class ContinueQ2P123 {
     	System.out.println("수학평균 :" + total/count+"입니다.");
     	
     	total =0;
+    	
     	count =0;
     	for(int score : eng) {
     		if(score < 60) {

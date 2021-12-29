@@ -2,6 +2,10 @@
 public class P87Q3_3 {
 
 	public static void main(String[] args) {
+
+        public class P87Q3_3 {
+
+	public static void main(String[] args) {
 		boolean su01 = true;
 		boolean su02 = false;
 		
@@ -16,6 +20,11 @@ public class P87Q3_3 {
 		
 		k %= 10;
 		System.out.println(++k);
+	}
+
+}
+
+
 	}
 
 }
