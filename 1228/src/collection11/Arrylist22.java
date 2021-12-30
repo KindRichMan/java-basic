@@ -28,6 +28,8 @@ public class Arrylist22 {
 		List<String> list2 = new ArrayList();
 		System.out.println(list2.size());
 		System.out.println(list2.isEmpty());
+		//list1.remove(0);
+		//System.out.println(list1);
 		
 
 

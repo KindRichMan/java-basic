@@ -10,8 +10,18 @@ public class Array01 {
 		   // 배열의 크기(저장가능개수)는 "배열의 길이"라 표현합니다.
 		   // 배열명.length를 이용해 배열크기를 알 수있습니다.
 
-		int a[] = {1,2,3,4,};
+		int[] a = {1,2,3,4,5};
 		System.out.println(Arrays.toString(a));
+		
+		double[] b = {5,6,7,8,6.3, 8.3,44};
+		System.out.println(Arrays.toString(b));
+		
+		int[] c =new int[10];
+		System.out.println(Arrays.toString(c));
+		
+		System.out.println(a.length);
+		System.out.println(b.length);
+		System.out.println(c.length);
 	}
 
 }

@@ -28,7 +28,8 @@ public class Lotto01 {
 			getNum= (int)(Math.random() * 45) + 1;
 			// 번호가 만약 기존에 뽑은 번호 목록에 포함되어있지 않다면
 			if(!lotto.contains(getNum)) {
-	          // 추가하기 
+	          // 추가하기
+				
 				lotto.add(getNum);
 		}
 		}
@@ -47,5 +48,6 @@ public class Lotto01 {
 		   System.out.println("2등 당첨번호 :" + getNum);
 		}
 	}
+
 
 
