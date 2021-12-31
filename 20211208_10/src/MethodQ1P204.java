@@ -8,7 +8,7 @@ public class MethodQ1P204 {
 	// 1. 양변에 32를 뺍니다.( 변경된 식 => 화씨 - 32 = 섭씨 X 1.8)
 	// 2. 양변을 1.8로 나눕니다.( 변경된 식 => (화씨 -32)/1.8 = 섭씨
 	// 위와 같이 섭씨 온도를 유도해낼 수 있습니다.
-	public static double ftof (double f) {
+	public static double ftoC(double f) {
 		// 섭씨온도 c
 		double c =(f - 32)/1.8;
 		return c;
@@ -19,7 +19,7 @@ public class MethodQ1P204 {
 		System.out.println("오늘의 화씨온도를 입력해주세요.");
 		double f = scan.nextDouble();
 		
-		double c = ftof(f);
+		double c = ftoC(f);
 		System.out.println("오늘의 섭씨온도는: " + c +"도 입니다.");
 
 	}

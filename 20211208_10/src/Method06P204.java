@@ -1,5 +1,5 @@
 
-public class Methid06P204 {
+public class Method06P204 {
 	// mul 메서드 선언해주세요.
 	// 이 메서드는 여러분들이 임의로 이름붙인 정수 변수 3개를 입력받아
 	// 3개를 곱한 값을 return해줍니다.
